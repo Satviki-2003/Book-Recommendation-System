@@ -54,7 +54,7 @@ To run this project locally, clone the repository and install the required depen
 
 ### Clone the repository
 ```
-git clone [link]
+git clone https://github.com/Satviki-2003/Book-Recommendation-System/tree/main/NextRead-Analytics
 ```
 
 ### Navigate into the project directory
