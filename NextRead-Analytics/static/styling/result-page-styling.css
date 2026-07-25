@@ -1,0 +1,142 @@
+/* --- Page Reset & Base Styles --- */
+body {
+  background: linear-gradient(rgba(15, 15, 22, 0.9), rgba(15, 15, 22, 0.9)), 
+              url('https://images.unsplash.com/photo-1507842217343-583bb7270b66?auto=format&fit=crop&q=80&w=2000');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #ffffff;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+  padding: 2.5rem 2rem;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/* --- Container & Typography --- */
+#page-title {
+  font-weight: 800;
+  font-size: 2.2rem;
+  margin-bottom: 3rem;
+  letter-spacing: -0.5px;
+}
+
+#userid {
+  color: #74b9ff;
+  text-shadow: 0 0 15px rgba(116, 185, 255, 0.4);
+}
+
+.shelf {
+  margin-bottom: 3.5rem;
+  width: 100%;
+}
+
+.shelf h2 {
+  font-size: 1.35rem;
+  font-weight: 600;
+  color: #f1f2f6;
+  margin-bottom: 1.25rem;
+  padding-left: 0.5rem;
+  border-left: 4px solid #74b9ff; /* Blue accent bar next to titles */
+}
+
+/* --- Horizontal Carousel (Card Deck) --- */
+.card-deck {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding: 0.75rem 0.5rem;
+  scroll-behavior: smooth;
+}
+
+/* Custom Sleek Scrollbar for Rows */
+.card-deck::-webkit-scrollbar {
+  height: 6px;
+}
+
+.card-deck::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 10px;
+}
+
+.card-deck::-webkit-scrollbar-thumb {
+  background: rgba(116, 185, 255, 0.2);
+  border-radius: 10px;
+}
+
+.card-deck::-webkit-scrollbar-thumb:hover {
+  background: rgba(116, 185, 255, 0.5);
+}
+
+/* --- Premium Book Card Layout --- */
+.shelf .card {
+  flex: 0 0 auto; 
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), 
+              box-shadow 0.3s ease, 
+              border-color 0.3s ease;
+}
+
+/* Elevate card on hover */
+.shelf .card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(116, 185, 255, 0.4);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+/* Book Cover Fixes */
+.card-img-top {
+  height: 230px;
+  object-fit: cover; 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.card-body {
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+/* Text Element Selectors */
+.book-title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.95rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Automatically truncates multi-line titles with ellipses (...) */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 0.3rem;
+}
+
+.book-author {
+  color: #a4b0be;
+  font-size: 0.85rem;
+}
+
+.book-year {
+  color: #74b9ff;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.back-home-btn {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  color: #a4b0be;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+}
+
+.back-home-btn:hover {
+  color: #74b9ff; 
+  transform: translateX(-3px); 
+}
