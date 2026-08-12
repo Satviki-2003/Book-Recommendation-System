@@ -24,7 +24,6 @@ Unlike basic recommendation scripts that return a single linear list, NextRead A
 * **Core Language:** Python (Object-Oriented Programming)
 * **Data Manipulation:** Pandas
 * **Backend Framework:** Flask (WSGI Web Server Application)
-* **Deployment:** Replit Containerization Ecosystem
 * **Frontend UI:** HTML5, CSS3 (Custom responsive layout with dynamic loading mechanics)
 
 ---
