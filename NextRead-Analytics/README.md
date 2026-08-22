@@ -2,7 +2,6 @@
 
 NextRead Analytics is a full-stack, web-based recommendation system that moves complex data science modeling out of static development environments and into a live, interactive production application. Built using Flask and Pandas, the engine serves multi-layered, personalized book suggestions in real-time based on hybrid filtering methodologies.
 
-🎛️ **Live Interactive App:** [INSERT YOUR REPLIT LIVE LINK HERE]
 
 ---
 
