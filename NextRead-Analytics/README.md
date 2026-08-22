@@ -23,7 +23,7 @@ Unlike basic recommendation scripts that return a single linear list, NextRead A
 ## 🛠️ Tech Stack & Tools
 
 * **Core Language:** Python (Object-Oriented Programming)
-* **Data Manipulation:** Pandas
+* **Data Manipulation:** Pandas, Sklearn
 * **Backend Framework:** Flask (WSGI Web Server Application)
 * **Frontend UI:** HTML5, CSS3 (Custom responsive layout with dynamic loading mechanics)
 
