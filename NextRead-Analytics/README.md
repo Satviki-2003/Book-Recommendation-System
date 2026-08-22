@@ -16,6 +16,8 @@ Unlike basic recommendation scripts that return a single linear list, NextRead A
 * ⏳ **Latest Release:** Implements a publication-year sort filter to highlight newly published titles dynamically.
 * ⚡ **Real-Time Inference Layer:** A lightweight Flask backend routes user inputs, calculates vector similarities on demand, and instantly updates the glassmorphic user interface.
 
+![System Architecture Diagram](assets/sytem_architecture.png)
+
 ---
 
 ## 🛠️ Tech Stack & Tools
