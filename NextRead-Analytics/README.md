@@ -33,7 +33,9 @@ Unlike basic recommendation scripts that return a single linear list, NextRead A
 ├── Data_Preparation
     ├── Dataset                      # Folder to store donloaded datasets
     ├── dataset_prep.py              # Model Building Script
-├── models                           # Folder to store models 
+├── assets/
+    ├── system_architecture.png      # System Architecture
+├── models                           # Folder to store models
 ├── static
     ├── images
         ├── Generic-book-cover.png   # A generic book cover for missing images
