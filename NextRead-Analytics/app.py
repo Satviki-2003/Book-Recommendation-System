@@ -4,10 +4,34 @@ import pandas as pd
 import random
 import requests
 import recommendation_system
+import os
 
 app = Flask(__name__)
 
 rec_sys=recommendation_system.RecommendationSystem()
+
+# Directory name
+MODEL_DIR = 'models'
+os.makedirs(MODEL_DIR, exist_ok=True)
+
+# Model download
+files_to_download = {
+    'book_sim_df.pkl': 'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/book_sim_df.pkl',
+    'final_ratings_df.pkl': 'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/final_ratings_df.pkl',
+    'merged_df.pkl': 'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/merged_df.pkl',
+    'user_sim_df.pkl':'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/user_sim_df.pkl'
+}
+
+# Files to download
+for filename, url in files_to_download.items():
+    file_path = os.path.join(MODEL_DIR, filename)
+    if not os.path.exists(file_path):
+        print(f"Downloading {filename}...")
+        urllib.request.urlretrieve(url, file_path)
+        print(f"{filename} downloaded successfully!")
+    else:
+        print(f"{filename} already exists locally.")
+        
     
 @app.route('/')
 def index():
