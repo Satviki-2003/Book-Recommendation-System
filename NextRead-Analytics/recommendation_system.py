@@ -8,11 +8,11 @@ class RecommendationSystem:
         # Loading all the models
         print("Loading models... please wait.")
         with open('models/book_sim_df.pkl', 'rb') as f:
-            self.book_sim_df = pickle.load(f)
+            self.book_sim_df = pickle.load(f).astype('float32')
         with open('models/merged_df.pkl', 'rb') as f:
             self.merged_df = pickle.load(f)
         with open('models/user_sim_df.pkl', 'rb') as f:
-            self.user_sim_df = pickle.load(f)
+            self.user_sim_df = pickle.load(f).astype('float32')
         with open('models/final_ratings_df.pkl', 'rb') as f:
             self.final_ratings = pickle.load(f)
 
