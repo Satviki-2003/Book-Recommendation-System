@@ -8,8 +8,6 @@ import requests
 
 app = Flask(__name__)
 
-rec_sys = recommendation_system.RecommendationSystem()
-
 # Directory name
 MODEL_DIR = 'models'
 os.makedirs(MODEL_DIR, exist_ok=True)
@@ -39,6 +37,7 @@ for filename, url in files_to_download.items():
   else:
     print(f'{filename} already exists locally.')
 
+rec_sys = recommendation_system.RecommendationSystem()
 
 @app.route('/')
 def index():
