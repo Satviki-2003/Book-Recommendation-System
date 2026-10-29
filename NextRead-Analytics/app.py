@@ -16,10 +16,10 @@ os.makedirs(MODEL_DIR, exist_ok=True)
 
 # Model download
 files_to_download = {
-    'book_sim_df.pkl': 'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/book_sim_df.pkl',
-    'final_ratings_df.pkl': 'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/final_ratings_df.pkl',
-    'merged_df.pkl': 'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/merged_df.pkl',
-    'user_sim_df.pkl':'https://github.com/your-username/NextRead-Analytics/releases/download/v1.0.0/user_sim_df.pkl'
+    'book_sim_df.pkl': 'https://github.com/satviki-2003/NextRead-Analytics/releases/download/v1.0.0/book_sim_df.pkl',
+    'final_ratings_df.pkl': 'https://github.com/satviki-2003/NextRead-Analytics/releases/download/v1.0.0/final_ratings_df.pkl',
+    'merged_df.pkl': 'https://github.com/satviki-2003/NextRead-Analytics/releases/download/v1.0.0/merged_df.pkl',
+    'user_sim_df.pkl':'https://github.com/satviki-2003/NextRead-Analytics/releases/download/v1.0.0/user_sim_df.pkl'
 }
 
 # Files to download
