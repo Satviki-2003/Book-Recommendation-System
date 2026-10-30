@@ -1,4 +1,4 @@
-import pickle
+import joblib
 import random
 import requests
 
@@ -7,14 +7,10 @@ class RecommendationSystem:
     def __init__(self):
         # Loading all the models
         print("Loading models... please wait.")
-        with open('models/book_sim_df.pkl', 'rb') as f:
-            self.book_sim_df = pickle.load(f)
-        with open('models/merged_df.pkl', 'rb') as f:
-            self.merged_df = pickle.load(f)
-        with open('models/user_sim_df.pkl', 'rb') as f:
-            self.user_sim_df = pickle.load(f)
-        with open('models/final_ratings_df.pkl', 'rb') as f:
-            self.final_ratings = pickle.load(f)
+        self.book_sim_df = joblib.load('models/book_sim_df.pkl', mmap_mode='r')
+        self.merged_df = joblib.load('models/merged_df.pkl', mmap_mode='r')
+        self.user_sim_df = joblib.load('models/user_sim_df.pkl', mmap_mode='r')
+        self.final_ratings = joblib.load('models/final_ratings_df.pkl', mmap_mode='r')
 
         print("Optimizing data structures for O(1) lookups...")
         
