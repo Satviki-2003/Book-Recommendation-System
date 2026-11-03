@@ -5,9 +5,7 @@ NextRead Analytics is a full-stack, web-based recommendation system that moves c
 
 ---
 ## Demo video
-<p align="center">
-  <img src="https://raw.githubusercontent.com/Satviki-2003/NextRead-Analytics/main/assets/NextRead-Analytics-Demo.gif" alt="App Demo" width="100%">
-</p>
+![App Demo](assets/NextRead-Analytics-Demo.gif)
 ---
 ## 🚀 Key Features & Architecture
 
