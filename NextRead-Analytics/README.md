@@ -4,7 +4,10 @@ NextRead Analytics is a full-stack, web-based recommendation system that moves c
 
 
 ---
+## Demo video
+![Demo](assets/.png)
 
+---
 ## 🚀 Key Features & Architecture
 
 Unlike basic recommendation scripts that return a single linear list, NextRead Analytics processes data through a tiered pipeline to generate distinct, strategically segmented recommendation "shelves" as seen in the application:
